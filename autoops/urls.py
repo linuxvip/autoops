@@ -30,9 +30,7 @@ urlpatterns = [
     url(r'^asset/', include('asset.urls', namespace="asset", app_name='asset'), ),
     url(r'^tasks/', include('tasks.urls', namespace="tasks", app_name='tasks'), ),
     url(r'^names/', include('names.urls', namespace="names", app_name='names'), ),
-    url(r'^library/', include('library.urls', namespace="library", app_name='library'), ),
     url(r'^upload/',  AssetUpload.as_view()),
-    url(r'^ueditor/', include('ueditor.urls')),
 ]
 
 
